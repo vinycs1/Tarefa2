@@ -1,0 +1,9 @@
+{
+  "groups": [{
+    "name": "tarefa",
+    "type": "maispartners.controllers.ApplicationInitializer",
+    "sourceType": "maispartners.controllers.ApplicationInitializer"
+  }],
+  "properties": [],
+  "hints": []
+}

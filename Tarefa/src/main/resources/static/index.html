@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<title>Hello MAIS</title>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+</style>
+
+</head>
+
+
+<body onload="listItem(); listNovoItem()">
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/essential.js"></script>
+	<script src="js/tarefa.js"></script>
+	
+	
+	<h1>Item</h1>
+
+	<p>Nome:<input type="text" id="item_salvar"></input>
+	<p>nmt:<input type="text" id="item_nmt"></input>
+	
+	<p>NovoItem:<br/>
+	<select class="opcoes"></select>
+	<br/>
+
+	<br>
+	<br>
+	<button  onclick="saveItem();">Salvar</button>
+		
+	
+	<h1>Tabela de Itens</h1>
+	<button onclick="listItem();">Listar</button> 
+	<br>
+	<br>
+
+
+	
+	<table id="itemTable">
+		<thead>
+			<tr>
+				<th>
+	                Id
+	            </th> 
+	            <th>
+	                Name
+	            </th> 
+
+	             <th>
+	               nmt 
+	            </th>
+	            
+	            <th>
+	                
+	            </th> 
+	            
+
+        	</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	
+	<br>
+	<hr>
+
+	<h1>NovoItem</h1>
+
+	<p>Nome:<input type="text" id="novo_item_salvar"></input>
+	<p>Texto 1:<input type="text" id="novo_item_text1"></input>
+	 Texto 2:<input type="text" id="novo_item_text2"></input>
+	<p>Inteiro:<input type="text" id="novo_item_inteiro"></input>
+	Double:<input type="text" id="novo_item_double"></input>
+	<br>
+	<br>
+	<button  onclick="saveNovoItem();">Salvar Novo Item</button>
+	<h1>Tabela de Novos Itens</h1>
+	<button onclick="listNovoItem();">Listar Novo Item</button> 
+	<h4>Adicionar ao inteiro</h4>
+	<p>ID:<input type="text" id="id_somar"></input>
+	valor:<input type="text" id="valor_somar"></input>
+	<button onclick="somarInteiro();">Somar inteiro</button> 
+	<br>
+	<br>
+
+	<table id="novoitemTable">
+		<thead>
+			<tr>
+				<th>
+	                Id
+	            </th> 
+	            <th>
+	                Name
+	            </th>
+	            <th>
+	                Texto 1
+	            </th> 
+	            <th>
+	                Texto 2
+	            </th>  
+
+	             <th>
+	               inteiro 
+	            </th>
+
+	            <th>
+	                creatAt
+	            </th>
+
+	            <th>
+	                double
+	            </th>  
+	            
+	            <th>
+	                
+	            </th> 
+	            
+
+        	</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+	
+	
+</body>
+</html>
